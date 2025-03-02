@@ -7,7 +7,7 @@ import { Menu } from "lucide-react";
 import Drawer from "./Drawer";
 
 const Header = () => {
-  const [isDrawerOpen, setIsDrawerOpen] = useState(true);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   return (
     <header className="border-b-1 border-b-overlay">
