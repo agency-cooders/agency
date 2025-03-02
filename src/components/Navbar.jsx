@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex gap-3 items-center">
+    <nav className="hidden md:flex gap-3 items-center">
       {navbarItems.map((navItem, index) => (
         <NavItem
           key={index}
