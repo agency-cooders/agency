@@ -17,7 +17,7 @@ const Logo = () => {
 
   const handleClick = () => {
     setScattered(true);
-    setTimeout(() => setScattered(false), 300); // Auto-reset after 300ms
+    setTimeout(() => setScattered(false), 300);
   };
 
   return (
@@ -31,7 +31,7 @@ const Logo = () => {
       animate={
         hovered
           ? {
-              scale: [1, 1.1, 1], // Scale up and back repeatedly
+              scale: [1, 1.1, 1],
               transition: {
                 duration: 0.6,
                 repeat: Infinity,
