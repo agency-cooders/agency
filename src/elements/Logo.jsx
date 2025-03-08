@@ -22,7 +22,7 @@ const Logo = () => {
 
   return (
     <motion.svg
-      className="w-12 h-12 fill-primary-color cursor-pointer"
+      className="w-12 h-12 fill-primary-color cursor-pointer z-50"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 46 46"
       onClick={handleClick}

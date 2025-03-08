@@ -5,12 +5,24 @@ import React, { useState } from "react";
 import Navbar from "./Navbar";
 import { Menu } from "lucide-react";
 import Drawer from "./Drawer";
+import { SparklesCore } from "./ui/sparkles";
 
 const Header = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   return (
     <header className="border-b-1 border-b-overlay">
+      <div className="w-full inset-0 h-20 absolute">
+        <SparklesCore
+          id="tsparticlesfullpage"
+          background="transparent"
+          minSize={0.6}
+          maxSize={1.2}
+          particleDensity={100}
+          className="w-full h-full"
+          particleColor="#9eff00"
+        />
+      </div>
       <ContentArea classNames="h-20 flex items-center justify-between">
         <Logo />
         <Navbar />

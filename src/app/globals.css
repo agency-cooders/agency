@@ -3,7 +3,7 @@
 @theme {
   --fill-primary-color: #9eff00;
   --color-primary: #9eff00;
-  --color-primary-background: #111111;
+  --color-primary-background: #010101;
   --color-overlay: #161616;
 }
 
@@ -14,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #111111;
+    --background: #010101;
     --foreground: #ededed;
   }
 }
