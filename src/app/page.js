@@ -1,14 +1,10 @@
 "use client";
 
-import Header from "@/components/Header";
+import Home from "@/pages/Home";
 import React from "react";
 
-const Home = () => {
-  return (
-    <main className="bg-primary-background">
-      <Header />
-    </main>
-  );
+const App = () => {
+  return <Home />;
 };
 
-export default Home;
+export default App;
