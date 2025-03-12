@@ -8,7 +8,7 @@ const Services = () => {
         <p className="uppercase text-center text-primary font-medium">
           Our capabilities
         </p>
-        <h3 className="text-center mt-5 text-4xl">Let's work together</h3>
+        <h3 className="text-center font-bold mt-5 text-4xl">OUR SERVICES</h3>
       </section>
     </ContentArea>
   );
