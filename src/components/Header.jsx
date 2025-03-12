@@ -36,7 +36,7 @@ const Header = () => {
         <ContentArea classNames="h-20 flex items-center justify-between">
           <Logo />
           <Navbar />
-          <Button content="Contact Us" classNames="hidden md:flex" />
+          <Button content="Contact Us" classNames="hidden md:flex text-lg" />
           <div
             className="md:hidden text-primary cursor-pointer"
             onClick={() => setIsDrawerOpen((prev) => !prev)}>

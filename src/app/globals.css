@@ -23,3 +23,16 @@ body {
   color: var(--foreground);
   background: var(--background);
 }
+
+html,
+body {
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+}

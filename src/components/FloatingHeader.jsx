@@ -21,11 +21,11 @@ const FloatingHeader = () => {
   return (
     <React.Fragment>
       {showFloatingDock ? (
-        <div className="flex items-center justify-center h-[35rem] w-full">
+        <div className="flex items-center justify-center w-full">
           <FloatingDock
             items={dockItems}
-            desktopClassName="fixed bottom-4 left-1/2 -translate-x-1/2 z-50"
-            mobileClassName="fixed right-4 bottom-4 translate-y-0"
+            desktopClassName="fixed flex items-center bg-primary-background w-full justify-center py-12 bottom-0 left-1/2 -translate-x-1/2 z-50"
+            mobileClassName="fixed z-30 right-4 bottom-4 translate-y-0"
           />
         </div>
       ) : null}

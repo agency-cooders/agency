@@ -3,7 +3,7 @@ import React from "react";
 const Button = ({ content, classNames }) => {
   return (
     <div className={`text-center ${classNames}`}>
-      <button className="relative z-10 px-[18px] py-2 font-bold uppercase text-primary transition-colors duration-500 border-2 border-primary rounded-none overflow-hidden group hover:text-primary-background cursor-pointer">
+      <button className="relative z-10 px-[16px] py-[6px] font-bold uppercase text-primary transition-colors duration-500 border-2 border-primary rounded-none overflow-hidden group hover:text-primary-background cursor-pointer">
         <span className="relative z-20">{content}</span>
         <span className="absolute inset-0 bg-primary-background rounded-none z-[-1]"></span>
         <span className="absolute inset-0 flex items-center justify-center h-full filter-[url(#goo)]">

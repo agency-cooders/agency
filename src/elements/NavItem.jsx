@@ -2,7 +2,7 @@ import React from "react";
 
 const NavItem = ({ content }) => {
   return (
-    <div className="text-center">
+    <div className="text-center text-lg">
       <span className="relative font-medium uppercase overflow-hidden group inline-flex transition-colors duration-300 text-white hover:text-[#9eff00] hover:font-bold cursor-pointer">
         {content.split("").map((char, index) => (
           <span
