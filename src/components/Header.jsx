@@ -20,7 +20,6 @@ const Header = () => {
 
   return (
     <>
-      {/* Header Section */}
       <header className="border-b-1 border-b-overlay">
         <div className="w-full inset-0 h-20 absolute">
           <SparklesCore

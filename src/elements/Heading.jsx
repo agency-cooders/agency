@@ -16,14 +16,16 @@ const Heading = ({ title }) => {
       <div className="bg-black flex flex-col items-center justify-center overflow-hidden rounded-md pb-10 -ml-1">
         <h1
           ref={titleRef}
-          className="md:text-4xl text-3xl lg:text-[40px] font-bold text-center relative z-20">
+          className="md:text-4xl text-3xl lg:text-[40px] font-semibold text-center relative z-20">
           {title.split("").map((char, index) => (
             <span
               key={index}
               onMouseEnter={() => setHoverIndex(index)}
               onMouseLeave={() => setHoverIndex(-1)}
               className={`transition-colors duration-300 ${
-                hoverIndex >= index ? "text-[#9eff00]" : "text-white"
+                hoverIndex >= index
+                  ? "text-[#9eff00] font-extrabold"
+                  : "text-white"
               }`}>
               {char}
             </span>
