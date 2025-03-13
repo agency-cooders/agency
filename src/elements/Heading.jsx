@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
+import NavItem from "./NavItem";
 
 const Heading = ({ title }) => {
   const titleRef = useRef(null);
@@ -12,24 +13,13 @@ const Heading = ({ title }) => {
   }, [title]);
 
   return (
-    <div className="flex items-center justify-start">
+    <div className="flex items-center justify-center">
       <div className="bg-black flex flex-col items-center justify-center overflow-hidden rounded-md pb-10 -ml-1">
-        <h1
-          ref={titleRef}
-          className="md:text-4xl text-3xl lg:text-[40px] font-semibold text-center relative z-20">
-          {title.split("").map((char, index) => (
-            <span
-              key={index}
-              onMouseEnter={() => setHoverIndex(index)}
-              onMouseLeave={() => setHoverIndex(-1)}
-              className={`transition-colors duration-300 ${
-                hoverIndex >= index
-                  ? "text-[#9eff00] font-extrabold"
-                  : "text-white"
-              }`}>
-              {char}
-            </span>
-          ))}
+        <h1 ref={titleRef} className="font-semibold text-center relative z-20">
+          <NavItem
+            content={title}
+            size="md:text-4xl text-3xl lg:text-[40px] "
+          />
         </h1>
         <div className="relative mt-[2px]" style={{ width: width * 1.1 }}>
           <div className="absolute left-1/2 top-0 -translate-x-1/2 bg-gradient-to-r from-transparent via-[#9eff00] to-transparent h-[1.3px] w-full opacity-60" />

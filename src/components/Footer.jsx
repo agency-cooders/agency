@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <section className="border-t-1 border-t-overlay">
       <ContentArea>
-        <footer className="flex items-center justify-between pt-10 font-semibold">
+        <footer className="flex items-center justify-between py-6 font-semibold">
           <NavItem content="cooders" />
           <p>Made with ❤️ &copy; 2025 COODERS</p>
           <div className="flex items-center gap-3">

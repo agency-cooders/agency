@@ -8,7 +8,7 @@ const Services = () => {
   return (
     <ContentArea>
       <section className="pt-10">
-        <Heading title="Services" />
+        <Heading title="SERVICES" />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative z-10 py-0 md:py-5 w-full">
           {servicesDetails.map((service, index) => (
             <div
