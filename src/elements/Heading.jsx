@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import NavItem from "./NavItem";
+import ShinyText from "@/components/ui/shiny-text";
 
 const Heading = ({ title }) => {
   const titleRef = useRef(null);
@@ -15,10 +15,14 @@ const Heading = ({ title }) => {
   return (
     <div className="flex items-center justify-center">
       <div className="bg-black flex flex-col items-center justify-center overflow-hidden rounded-md pb-10 -ml-1">
-        <h1 ref={titleRef} className="font-semibold text-center relative z-20">
-          <NavItem
-            content={title}
-            size="md:text-4xl text-3xl lg:text-[40px] "
+        <h1
+          ref={titleRef}
+          className="md:text-4xl text-3xl lg:text-[40px] font-semibold text-center relative z-20 text-with-outline">
+          <ShinyText
+            text={title}
+            disabled={false}
+            speed={3}
+            className="custom-class"
           />
         </h1>
         <div className="relative mt-[2px]" style={{ width: width * 1.1 }}>

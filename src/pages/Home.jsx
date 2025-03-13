@@ -12,7 +12,7 @@ const Home = () => {
       <TopLoader />
       <Header />
       <ClickSpark sparkColor="#9eff00">
-        <FloatingHeader />
+        {/* <FloatingHeader /> */}
         <Services />
         <Footer />
       </ClickSpark>

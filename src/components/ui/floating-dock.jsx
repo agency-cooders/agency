@@ -140,7 +140,7 @@ function IconContainer({ mouseX, title, icon, href }) {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 2 }}
-              className="absolute top-[-32px] left-1/2 transform -translate-x-1/2 px-2 py-0.5 whitespace-nowrap rounded-md bg-gray-100 border dark:bg-neutral-800 dark:border-neutral-900 dark:text-white border-gray-200 text-neutral-700 text-xs">
+              className="absolute top-[-32px] left-1/2 transform -translate-x-1/2 px-2 py-0.5 whitespace-nowrap rounded-md bg-gray-100 border dark:bg-neutral-800 dark:border-neutral-900 border-gray-200 text-neutral-700 text-xs">
               {title}
             </motion.div>
           )}
